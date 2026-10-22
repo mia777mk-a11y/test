@@ -9,5 +9,7 @@
   "display": "standalone",
   "background_color": "#e9f7ff",
   "theme_color": "#c5e8ff",
-  "icons": []
+  "icons": [
+    {"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
 }
