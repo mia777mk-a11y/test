@@ -9,3 +9,13 @@ body.dark-mode{color-scheme:dark;--ink:#e0edf5;--muted:#a1b5c3;--line:#344956;--
 .main-area.trash-mode{grid-template-columns:minmax(0,1fr)}
 .main-area.trash-mode .editor-pane{display:none}
 @media(max-width:760px){.main-area.trash-mode{display:flex}.main-area.trash-mode .notes-pane{display:flex}.main-area.trash-mode .editor-pane{display:none}}
+
+.anime-banner{height:86px;position:relative;overflow:hidden;border-radius:14px;margin-top:17px;background:linear-gradient(115deg,#9ed6f5,#e0f3ff 55%,#c7e7fb);border:1px solid #fff}
+.anime-banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 27%;opacity:.82}
+.anime-banner:after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,#183d59dc,transparent 95%)}
+.anime-banner-caption{position:absolute;z-index:1;right:14px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:4px;color:white;text-shadow:0 1px 6px #183d5960}
+.anime-banner-caption span{font-size:8px;letter-spacing:.12em}
+.anime-banner-caption strong{font-family:"Aref Ruqaa Ink",serif;font-size:19px}
+.anime-banner.image-fallback:after{background:linear-gradient(270deg,#4d8bb4c9,transparent)}
+.anime-banner.image-fallback .anime-banner-caption{color:#fff}
+@media(max-width:760px){.anime-banner{height:78px;margin-top:14px}.anime-banner-caption strong{font-size:18px}}
