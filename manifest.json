@@ -1,0 +1,13 @@
+{
+  "name": "غيم — دفتر يومياتي",
+  "short_name": "غيم",
+  "description": "دفتر ملاحظات عربي هادئ يعمل دون حساب ويحفظ الملاحظات على جهازك.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e9f7ff",
+  "theme_color": "#c5e8ff",
+  "icons": []
+}
