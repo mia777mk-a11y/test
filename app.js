@@ -304,7 +304,7 @@
     if (dirty) saveCurrent();
     currentView=view;
     document.querySelectorAll("[data-view]").forEach(b=>b.classList.toggle("active",b.dataset.view===view));
-    if(view==="trash"){els.editor.classList.add("editor-hidden");document.querySelector(".main-area").classList.add("trash-mode");currentId=null;}
+    if(view==="trash"){els.editor.classList.add("editor-hidden");document.querySelector(".main-area").classList.add("trash-mode");currentId=null;showListOnMobile();}
     else if(!activeNote() || (view==="favorites"&&!activeNote().favorite) || ((view==="journal"||view==="ideas")&&activeNote().category!==view)) {
       const first=visibleNotes()[0];
       if(first)openNote(first.id);else {currentId=null;clearEditor();if(window.matchMedia("(max-width: 760px)").matches)els.editor.classList.add("editor-hidden");}
